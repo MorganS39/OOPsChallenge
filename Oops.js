@@ -209,4 +209,18 @@ Animal.prototype = {
 let duck = Object.create(Animal.prototype);
 let beagle = Object.create(Animal.prototype); 
 
+// set the child's prototype to an instance of the parent
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+let beagle = new Dog();
+
 // 
