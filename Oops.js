@@ -300,4 +300,18 @@ function Bird() {
     console.log("A cozy nest is ready");
 })();
 
-//
+// Use an IIFE to create a module
+let funModule = (function () {
+    return {
+      isCuteMixin: function(obj) {
+        obj.isCute = function() {
+      return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+        };
+      }
+    }
+})();
