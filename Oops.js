@@ -76,4 +76,10 @@ for (let property in canary) {
 }
 console.log(ownProps);
 
-//
+// Use prototype properties to reduce duplicate code
+function Dog(name) {
+    this.name = name;
+}
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
