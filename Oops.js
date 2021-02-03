@@ -53,4 +53,10 @@ function Dog(name, color) {
 
 let terrier = new Dog("Trotters", "orange");
 
-//
+// Verify an object's constructor with isntanceof
+function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+}
+
+let myHouse = new House(3);
+myHouse instanceof House;
