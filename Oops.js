@@ -120,4 +120,19 @@ function joinDogFraternity(candidate) {
     }
 }
 
-//
+// Change the prototype to a new object
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype = {
+    numLegs: 2,
+    eat: function() {
+    
+    },
+    describe: function() {
+      
+    }
+};
+
+// Remember to set the constructor property when changing the prototype
