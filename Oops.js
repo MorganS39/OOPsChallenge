@@ -36,4 +36,12 @@ function Dog() {
     this.numLegs = 4;
 }
 
-//
+// Use a constructor to create objects
+function Dog() {
+    this.name = "Rupert";
+    this.color = "brown";
+    this.numLegs = 4;
+}
+let hound = new Dog();
+
+// Extend constructors to receive arguments
